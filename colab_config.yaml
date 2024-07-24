@@ -1,0 +1,14 @@
+path: '/content/gdrive/MyDrive/Weapon-Detection-System/data' #dataset root dir
+train: /content/gdrive/MyDrive/Weapon-Detection-System/data/weapon_detection/val/images
+val: /content/gdrive/MyDrive/Weapon-Detection-System/data/weapon_detection/test/images
+#classes
+names:
+  0: Automatic_Rifle
+  1: Bazooka
+  2: Sniper
+  3: Handgun
+  4: Knife
+  5: Shotgun
+  6: SMG
+  7: Sniper
+  8: Sword

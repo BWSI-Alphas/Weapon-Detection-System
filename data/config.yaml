@@ -1,0 +1,14 @@
+path: C:\Users\Jack\Documents\GitHub\Weapon-Detection-System\data #dataset root dir
+train: weapon_detection\train\images
+val: weapon_detection\val\images
+#classes
+names:
+  0: Automatic_Rifle
+  1: Bazooka
+  2: Grenade_Launcher
+  3: Handgun
+  4: Knife
+  5: Shotgun
+  6: SMG
+  7: Sniper
+  8: Sword

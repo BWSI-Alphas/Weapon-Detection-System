@@ -5,7 +5,7 @@ val: weapon_detection\val\images
 names:
   0: Automatic_Rifle
   1: Bazooka
-  2: Grenade_Launcher
+  2: Sniper
   3: Handgun
   4: Knife
   5: Shotgun
