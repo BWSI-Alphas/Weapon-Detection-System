@@ -1,7 +1,17 @@
-from ultralytics import YOLO
+from ultralytics import YOLO 
+import torch
 
-# Load a pre-trained YOLOv8 model
-model = YOLO('yolov5s.pt')  # Replace with the appropriate pre-trained model file
+print(torch.__version__)  # Check PyTorch version
+print(torch.cuda.is_available())  # Should be True if ROCm is working correctly
 
-# Print the model architecture
-print(model)
+# Load a model
+model = YOLO("yolov8n.yaml")  # build a new model from scratch
+
+data_path = r'c:\Users\Jack\Documents\GitHub\Weapon-Detection-System\data\config.yaml'
+
+# Move the model to GPU
+#device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
+#model = model.to(device)
+
+# Use the model
+model.train(data=data_path, epochs=1)  # train the model
