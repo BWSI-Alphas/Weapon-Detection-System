@@ -24,7 +24,7 @@ def process_files_in_directory(directory_path, target_word, new_char):
                 print(f"Rewritten first character in {file_path}")
 
 # Example usage
-directory_path = r'c:\Users\Jack\Documents\GitHub\Weapon-Detection-System\data\weapon_detection\val\labels'
+directory_path = r'c:\Users\Jack\Documents\GitHub\Weapon-Detection-System\data\weapon_detection\train\labels'
 target_word = 'Sword'
 new_char = '8'  # New first character
 
