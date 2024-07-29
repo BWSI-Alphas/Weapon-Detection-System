@@ -12,7 +12,7 @@ class YOLOv8Model(torch.nn.Module):
         return x
 
 # Path to your YOLOv8 model weights file (.pth)
-model_path = r'C:\Users\Noah Lee\OneDrive\Documents\GitHub\Weapon-Detection-System\train_model\trained_model.pth'
+model_path = r'c:\Users\Jack\Documents\GitHub\Home Security System Project\Weapon-Detection-System\train_model\new_trained_model.pt'
 
 # Instantiate your model
 model = YOLOv8Model()
