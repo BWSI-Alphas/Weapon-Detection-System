@@ -13,6 +13,7 @@ class YOLOv8Model(torch.nn.Module):
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 data_path = '/Users/franklee/Documents/GitHub/Weapon-Detection-System/data/config.yaml'
 =======
 data_path = r'c:\Users\Jack\Documents\GitHub\Home Security System Project\Weapon-Detection-System\config.yaml'
@@ -20,6 +21,9 @@ data_path = r'c:\Users\Jack\Documents\GitHub\Home Security System Project\Weapon
 =======
 # Path to your YOLOv8 model weights file (.pth)
 model_path = r'C:\Users\Noah Lee\OneDrive\Documents\GitHub\Weapon-Detection-System\train_model\trained_model.pth'
+>>>>>>> Stashed changes
+=======
+data_path = r'c:\Users\Jack\Documents\GitHub\Home Security System Project\Weapon-Detection-System\config.yaml'
 >>>>>>> Stashed changes
 
 # Instantiate your model
