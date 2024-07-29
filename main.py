@@ -8,7 +8,11 @@ print(torch.cuda.is_available())  # Should be True if ROCm is working correctly
 # Load a model
 model = YOLO("yolov8n.yaml")  # build a new model from scratch
 
+<<<<<<< Updated upstream
 data_path = '/Users/franklee/Documents/GitHub/Weapon-Detection-System/data/config.yaml'
+=======
+data_path = r'c:\Users\Jack\Documents\GitHub\Home Security System Project\Weapon-Detection-System\config.yaml'
+>>>>>>> Stashed changes
 
 # Move the model to GPU
 device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
