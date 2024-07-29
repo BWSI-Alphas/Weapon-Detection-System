@@ -1,32 +1,32 @@
-from ultralytics import YOLO 
 import torch
-import os
 
-print(torch.__version__)  # Check PyTorch version
-print(torch.cuda.is_available())  # Should be True if ROCm is working correctly
+# Define or import your model class
+# This is just a placeholder. You need the actual model class definition.
+class YOLOv8Model(torch.nn.Module):
+    def __init__(self):
+        super(YOLOv8Model, self).__init__()
+        # Define your model layers here
 
-# Load a model
-model = YOLO("yolov8n.yaml")  # build a new model from scratch
+    def forward(self, x):
+        # Define the forward pass here
+        return x
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 data_path = '/Users/franklee/Documents/GitHub/Weapon-Detection-System/data/config.yaml'
 =======
 data_path = r'c:\Users\Jack\Documents\GitHub\Home Security System Project\Weapon-Detection-System\config.yaml'
 >>>>>>> Stashed changes
+=======
+# Path to your YOLOv8 model weights file (.pth)
+model_path = r'C:\Users\Noah Lee\OneDrive\Documents\GitHub\Weapon-Detection-System\train_model\trained_model.pth'
+>>>>>>> Stashed changes
 
-# Move the model to GPU
-device = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
-model = model.to(device)
+# Instantiate your model
+model = YOLOv8Model()
 
-# Train the model
-model.train(data=data_path, epochs=35)
+# Load the state dictionary
+model.load_state_dict(torch.load(model_path))
 
-# Define the directory and filename for saving the model
-save_dir = '/Users/franklee/Documents/GitHub/Weapon-Detection-System/train_model'
-os.makedirs(save_dir, exist_ok=True)
-save_path = os.path.join(save_dir, 'trained_model.pth')
-
-# Save the model
-torch.save(model.state_dict(), save_path)
-
-print(f"Model saved to {save_path}")
+# Set the model to evaluation mode
+model.eval()
